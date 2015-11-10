@@ -30,144 +30,146 @@ CREATE TABLE IF NOT EXISTS `result` (
 
 
 
-INSERT INTO tests VALUES (1, 'Первый тест');
-INSERT INTO tests VALUES (2, 'Второй тест');
-INSERT INTO tests VALUES (3, 'Третий тест');
+INSERT INTO tests VALUES (1, 'РџРµСЂРІС‹Р№ С‚РµСЃС‚');
+INSERT INTO tests VALUES (2, 'Р’С‚РѕСЂРѕР№ С‚РµСЃС‚');
+INSERT INTO tests VALUES (3, 'РўСЂРµС‚РёР№ С‚РµСЃС‚');
 
-INSERT INTO questions VALUES (0, 1, '<form action="/getquestions.form"><b>Тест 1. Вопрос 1.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (0, 1, '<form action="/getquestions.form"><b>РўРµСЃС‚ 1. Р’РѕРїСЂРѕСЃ 1.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="1" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 0 вопросов.<br />
-            Осталось ответить на 5 вопросов.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 0 РІРѕРїСЂРѕСЃРѕРІ.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 5 РІРѕРїСЂРѕСЃРѕРІ.');
 
-INSERT INTO questions VALUES (1, 1, '<form action="/getquestions.form"><b>Тест 1. Вопрос 2.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (1, 1, '<form action="/getquestions.form"><b>РўРµСЃС‚ 1. Р’РѕРїСЂРѕСЃ 2.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="2" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 1 вопрос.<br />
-            Осталось ответить на 4 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 1 РІРѕРїСЂРѕСЃ.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 4 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (2, 1, '<form action="/getquestions.form"><b>Тест 1. Вопрос 3.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (2, 1, '<form action="/getquestions.form"><b>РўРµСЃС‚ 1. Р’РѕРїСЂРѕСЃ 3.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="3" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 2 вопроса.<br />
-            Осталось ответить на 3 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 2 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 3 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (3, 1, '<form action="/getquestions.form"><b>Тест 1. Вопрос 4.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (3, 1, '<form action="/getquestions.form"><b>РўРµСЃС‚ 1. Р’РѕРїСЂРѕСЃ 4.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="4" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 3 вопроса.<br />
-            Осталось ответить на 2 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 3 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 2 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (4, 1, '<form action="/result.form"><b>Тест 1. Вопрос 5.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (4, 1, '<form action="/result.form"><b>РўРµСЃС‚ 1. Р’РѕРїСЂРѕСЃ 5.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="5" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 4 вопроса.<br />
-            Осталось ответить на 1 вопрос.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 4 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 1 РІРѕРїСЂРѕСЃ.');
 
 
-INSERT INTO questions VALUES (5, 2, '<form action="/getquestions.form"><b>Тест 2. Вопрос 1.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (5, 2, '<form action="/getquestions.form"><b>РўРµСЃС‚ 2. Р’РѕРїСЂРѕСЃ 1.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="1" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 0 вопросов.<br />
-            Осталось ответить на 5 вопросов.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 0 РІРѕРїСЂРѕСЃРѕРІ.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 5 РІРѕРїСЂРѕСЃРѕРІ.');
 
-INSERT INTO questions VALUES (6, 2, '<form action="/getquestions.form"><b>Тест 2. Вопрос 2.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (6, 2, '<form action="/getquestions.form"><b>РўРµСЃС‚ 2. Р’РѕРїСЂРѕСЃ 2.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="2" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 1 вопрос.<br />
-            Осталось ответить на 4 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 1 РІРѕРїСЂРѕСЃ.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 4 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (7, 2, '<form action="/getquestions.form"><b>Тест 2. Вопрос 3.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (7, 2, '<form action="/getquestions.form"><b>РўРµСЃС‚ 2. Р’РѕРїСЂРѕСЃ 3.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="3" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 2 вопроса.<br />
-            Осталось ответить на 3 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 2 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 3 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (8, 2, '<form action="/getquestions.form"><b>Тест 2. Вопрос 4.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (8, 2, '<form action="/getquestions.form"><b>РўРµСЃС‚ 2. Р’РѕРїСЂРѕСЃ 4.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="4" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 3 вопроса.<br />
-            Осталось ответить на 2 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 3 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 2 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (9, 2, '<form action="/result.form"><b>Тест 2. Вопрос 5.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (9, 2, '<form action="/result.form"><b>РўРµСЃС‚ 2. Р’РѕРїСЂРѕСЃ 5.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="5" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 4 вопроса.<br />
-            Осталось ответить на 1 вопрос.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 4 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 1 РІРѕРїСЂРѕСЃ.');
 
 
-INSERT INTO questions VALUES (10, 3, '<form action="/getquestions.form"><b>Тест 3. Вопрос 1.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (10, 3, '<form action="/getquestions.form"><b>РўРµСЃС‚ 3. Р’РѕРїСЂРѕСЃ 1.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="1" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 0 вопросов.<br />
-            Осталось ответить на 5 вопросов.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 0 РІРѕРїСЂРѕСЃРѕРІ.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 5 РІРѕРїСЂРѕСЃРѕРІ.');
 
-INSERT INTO questions VALUES (11, 3, '<form action="/getquestions.form"><b>Тест 3. Вопрос 2.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (11, 3, '<form action="/getquestions.form"><b>РўРµСЃС‚ 3. Р’РѕРїСЂРѕСЃ 2.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="2" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 1 вопрос.<br />
-            Осталось ответить на 4 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 1 РІРѕРїСЂРѕСЃ.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 4 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (12, 3, '<form action="/getquestions.form"><b>Тест 3. Вопрос 3.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (12, 3, '<form action="/getquestions.form"><b>РўРµСЃС‚ 3. Р’РѕРїСЂРѕСЃ 3.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="3" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 2 вопроса.<br />
-            Осталось ответить на 3 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 2 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 3 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (13, 3, '<form action="/getquestions.form"><b>Тест 3. Вопрос 4.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (13, 3, '<form action="/getquestions.form"><b>РўРµСЃС‚ 3. Р’РѕРїСЂРѕСЃ 4.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="4" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 3 вопроса.<br />
-            Осталось ответить на 2 вопроса.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 3 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 2 РІРѕРїСЂРѕСЃР°.');
 
-INSERT INTO questions VALUES (14, 3, '<form action="/result.form"><b>Тест 3. Вопрос 5.</b><br />
-            <input type="radio" name="answer" value="one"> Первый вариант<br />
-            <input type="radio" name="answer" value="two"> Второй вариант<br />
-            <input type="radio" name="answer" value="three"> Третий вариант<br />
+INSERT INTO questions VALUES (14, 3, '<form action="/result.form"><b>РўРµСЃС‚ 3. Р’РѕРїСЂРѕСЃ 5.</b><br />
+            <input type="radio" name="answer" value="one"> РџРµСЂРІС‹Р№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="two"> Р’С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚<br />
+            <input type="radio" name="answer" value="three"> РўСЂРµС‚РёР№ РІР°СЂРёР°РЅС‚<br />
             <input type="hidden" name="qNumber" value="5" />
-            <input type="submit" name="button" value="Следующий вопрос" /><br /></form>
-            Отвечено на 4 вопроса.<br />
-            Осталось ответить на 1 вопрос.');
+            <input type="submit" name="button" value="РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ" /><br /></form>
+            РћС‚РІРµС‡РµРЅРѕ РЅР° 4 РІРѕРїСЂРѕСЃР°.<br />
+            РћСЃС‚Р°Р»РѕСЃСЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° 1 РІРѕРїСЂРѕСЃ.');
+
+
 
