@@ -78,14 +78,11 @@ public class MainController {
 
         HttpSession session = request.getSession();
 
-//        Integer qNumber = Integer.valueOf(request.getParameter("qNumber"));
         Integer tNumber = Integer.parseInt(session.getAttribute("testN").toString());
         Integer qNumber = questionsEntityDAO.findAll(tNumber).size()-1;
 
         resultEntityDAO.add(
-                questionsEntityDAO.
-                        findAll(tNumber).
-                        get(qNumber).getId(),
+                questionsEntityDAO.findAll(tNumber).get(qNumber).getId(),
                 session.getAttribute("login").toString(),
                 request.getParameter("answer"));
 
