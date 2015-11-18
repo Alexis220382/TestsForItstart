@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="entity.QuestionsEntity" table="questions" schema="" catalog="test_db">
+    <class name="entity.QuestionsEntity" table="questions">
         <id name="id" column="id"/>
         <property name="id_tests" column="id_tests"/>
         <property name="name" column="name"/>
