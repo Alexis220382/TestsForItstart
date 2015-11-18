@@ -86,8 +86,8 @@ public class MainController {
                 questionsEntityDAO.
                         findAll(tNumber).
                         get(qNumber).getId(),
-                session.getAttribute("login").toString(),
-                request.getParameter("answer"));
+                        session.getAttribute("login").toString(),
+                        request.getParameter("answer"));
 
         modelAndView.setViewName("result");
         return modelAndView;

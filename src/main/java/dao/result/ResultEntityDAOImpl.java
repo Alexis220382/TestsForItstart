@@ -1,11 +1,13 @@
 package dao.result;
 
+import dao.ManageSessionFactory;
 import entity.ResultEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import javax.swing.*;
 import java.util.List;
 
 public class ResultEntityDAOImpl implements ResultEntityDAO {
@@ -15,18 +17,25 @@ public class ResultEntityDAOImpl implements ResultEntityDAO {
     }
 
     public ResultEntity add(int id_questions, String login, String name) {
-        Configuration configuration = new Configuration().configure();
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
-        Transaction tx = session.beginTransaction();
+        Session session = null;
+        try {
+            session = ManageSessionFactory.getFactory().openSession();
+            Transaction tx = session.beginTransaction();
 
-        ResultEntity resultEntity = new ResultEntity();
-        resultEntity.setId_questions(id_questions);
-        resultEntity.setLogin(login);
-        resultEntity.setName(name);
-        session.save(resultEntity);
-        tx.commit();
-        session.close();
+            ResultEntity resultEntity = new ResultEntity();
+            resultEntity.setId_questions(id_questions);
+            resultEntity.setLogin(login);
+            resultEntity.setName(name);
+            session.save(resultEntity);
+            tx.commit();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Ошибка при вставке", JOptionPane.OK_OPTION);
+        } finally {
+            if (session != null && session.isOpen()) {
+
+                session.close();
+            }
+        }
         return null;
     }
 

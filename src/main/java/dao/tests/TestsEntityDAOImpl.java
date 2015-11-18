@@ -1,37 +1,39 @@
 package dao.tests;
 
+import dao.ManageSessionFactory;
 import entity.TestsEntity;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestsEntityDAOImpl implements TestsEntityDAO {
 
-        public List<TestsEntity> findAll() {
-        Configuration configuration = new Configuration().configure();
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
-        Transaction tx = session.beginTransaction();
+    public List<TestsEntity> findAll() {
 
-        List idList = session.createQuery("select id from TestsEntity").list();
-        List nameList = session.createQuery("select name from TestsEntity").list();
-        List<TestsEntity> testsEntities = new ArrayList<TestsEntity>();
-        TestsEntity testsEntity = null;
-        int j = 0;
-        for(int i=0; i < idList.size(); i++) {
-            while (j < nameList.size()) {
-                testsEntity = new TestsEntity(Integer.parseInt(idList.get(i).toString()), nameList.get(j).toString());
-                testsEntities.add(testsEntity);
-                j++;
-                break;
+        Session session = null;
+        List<TestsEntity> testsEntities = null;
+        try {
+            session = ManageSessionFactory.getFactory().openSession();
+            Transaction tx = session.beginTransaction();
+
+            Criteria criteria = session.createCriteria(TestsEntity.class);
+            testsEntities = criteria.list();
+
+            tx.commit();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Ошибка при выборке", JOptionPane.OK_OPTION);
+        } finally {
+            if (session != null && session.isOpen()) {
+
+                session.close();
             }
         }
-        tx.commit();
-        session.close();
         return testsEntities;
     }
 
@@ -46,4 +48,6 @@ public class TestsEntityDAOImpl implements TestsEntityDAO {
     public void delete(TestsEntity testsEntity) {
 
     }
+
+
 }
